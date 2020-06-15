@@ -18,6 +18,7 @@
     "homepage": "https://github.com/affectal/repoint#readme",
     "devDependencies": {
         "@fancyapps/fancybox": "^3.5.7",
+        "@mdi/font": "^5.3.45",
         "browser-sync": "^2.26.7",
         "gulp": "^4.0.2",
         "gulp-autoprefixer": "^7.0.1",
@@ -27,6 +28,5 @@
         "gulp-sass": "^4.0.2",
         "gulp-uglify": "^3.0.2",
         "normalize.css": "^8.0.1"
-    },
-    "dependencies": {}
+    }
 }
