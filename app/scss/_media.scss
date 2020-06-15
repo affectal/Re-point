@@ -1,0 +1,67 @@
+@media (max-width: 1853px) {
+    .row__title {
+        justify-content: space-between;
+    }
+    .name {
+        margin-right: 23px;
+    }
+    .row__title.phone,
+    .row__item.phone {
+        max-width: 145px;
+    }
+    .pharmacy {
+        display: none;
+    }
+}
+
+@media (max-width: 1530px) {
+    .row__item.address {
+        background: linear-gradient(90deg, #201F25 391px, #fff 415px);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .check-item:checked+.right-check span.address {
+        background: linear-gradient(90deg, #30BE61 391px, #fff 415px);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+@media (max-width: 1506px) {
+    .row__item.address {
+        background: linear-gradient(90deg, #201F25 367px, #fff 391px);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .check-item:checked+.right-check span.address {
+        background: linear-gradient(90deg, #30BE61 367px, #fff 391px);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+@media (max-width: 1482px) {
+    .row__item.address {
+        background: linear-gradient(90deg, #201F25 343px, #fff 367px);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .check-item:checked+.right-check span.address {
+        background: linear-gradient(90deg, #30BE61 343px, #fff 367px);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+@media (max-width: 1458px) {
+    .row__item.address {
+        background: linear-gradient(90deg, #201F25 319px, #fff 343px);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .check-item:checked+.right-check span.address {
+        background: linear-gradient(90deg, #30BE61 319px, #fff 343px);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}

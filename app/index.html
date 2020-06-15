@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Re:point</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="//cdn.materialdesignicons.com/5.3.45/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <main>
+        <div class="wrapper">
+            <div class="left-inner">
+                <a href="#" class="logo">
+                    <img src="images/logo.png" alt="">
+                </a>
+                <div class="user">
+                    <div class="user__foto">
+                        <img src="images/user_foto.png" alt="">
+                    </div>
+                    <div class="user__name">Петров П. П.</div>
+                    <div class="user__logout"></div>
+                </div>
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li>
+                            <input class="left-input" type="checkbox" id="left-check1">
+                            <label class="left-label pharmacy-chain-left" for="left-check1">Аптечные сети</label>
+                        </li>
+                        <li>
+                            <input class="left-input" type="checkbox" id="left-check2">
+                            <label class="left-label courses-left" for="left-check2">Курсы</label>
+
+                        </li>
+                        <li>
+                            <input class="left-input" type="checkbox" id="left-check3">
+                            <label class="left-label requests-left active" for="left-check3">Заявки</label>
+
+                        </li>
+                        <li>
+                            <input class="left-input" type="checkbox" id="left-check4">
+                            <label class="left-label profile-left" for="left-check4">Личный профиль</label>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="right-inner">
+
+                <div class="pharmacy-chain"></div>
+
+                <div class="courses"></div>
+
+                <div class="requests active">
+                    <div class="requests__title-box">
+                        <div class="requests__title">Заявки</div>
+                        <div class="requests__subtitle">Требуют подтверждения</div>
+                    </div>
+                    <form class="requests__form">
+                        <button type="submit" class="requests__form-btn btn" data-fancybox data-src="#modal" data-href="javascript:;" disabled>Согласовать</button>
+                        <div class="requests__form-inner">
+                            <div class="row-title">
+                                <input class="right-input" type="checkbox" id="right-check-all">
+                                <label class="right-check-all" for="right-check-all"></label>
+                                <div class="row__title-wrap">
+                                    <span class="row__title date" id="sortByDate">Дата</span>
+                                    <span class="row__title name" id="sortByName">ФИО</span>
+                                    <span class="row__title phone">Телефон</span>
+                                    <span class="row__title pharmacy">Наименование аптеки</span>
+                                    <span class="row__title address">Адрес филиала</span>
+                                </div>
+                            </div>
+                            <div class="row" data-tooltip="Свердловская область, Екатеринбург, Центральный, ул. Демидова, д 16/1">
+                                <input class="right-input check-item" type="checkbox" id="right-check1" required>
+                                <label class="right-check" for="right-check1">
+                                <span class="row__item date sortByDate">31.10.2019</span>
+                                <span class="row__item name sortByName">Маховиков Анатолий Викторович</span>
+                                <span class="row__item phone">+7 (303) 555-0105</span>
+                                <span class="row__item pharmacy">Аптека 1</span>
+                                <span class="row__item address">Свердловская область, Екатеринбург, Центральный, ул. Демидова, д 16/1</span>
+                            </label>
+                            </div>
+                            <div class="row" data-tooltip="Волгоградская область, Волгоград, ул. Красная, д. 45">
+                                <input class="right-input check-item" type="checkbox" id="right-check2" required>
+                                <label class="right-check" for="right-check2">
+                                <span class="row__item date sortByDate">30.10.2019</span>
+                                <span class="row__item name sortByName">Андреева Марина Александровна</span>
+                                <span class="row__item phone">+7 (907) 555-0101</span>
+                                <span class="row__item pharmacy">Аптека 1</span>
+                                <span class="row__item address">Волгоградская область, Волгоград, ул. Красная, д. 45</span>
+                            </label>
+                            </div>
+                            <div class="row" data-tooltip="Вологодская область, Вологда, Железнодорожный, ул. Вокзальная, д. 38">
+                                <input class="right-input check-item" type="checkbox" id="right-check3" required>
+                                <label class="right-check" for="right-check3">
+                                <span class="row__item date sortByDate">29.10.2019</span>
+                                <span class="row__item name sortByName">Паршукова Маргарита Юрьевна</span>
+                                <span class="row__item phone">+7 (217) 555-0113</span>
+                                <span class="row__item pharmacy">Аптека 2</span>
+                                <span class="row__item address">Вологодская область, Вологда, Железнодорожный, ул. Вокзальная, д. 38</span>
+                            </label>
+                            </div>
+                            <div class="row" data-tooltip="Свердловская область, Екатеринбург, Центральный, ул. Демидова, д 16/1">
+                                <input class="right-input check-item" type="checkbox" id="right-check4" required>
+                                <label class="right-check" for="right-check4">
+                                <span class="row__item date sortByDate">28.10.2019</span>
+                                <span class="row__item name sortByName">Кузнецова Татьяна Геннадьевна</span>
+                                <span class="row__item phone">+7 (704) 555-0127</span>
+                                <span class="row__item pharmacy">Аптека 2</span>
+                                <span class="row__item address">Свердловская область, Екатеринбург, Центральный, ул. Демидова, д 16/1</span>
+                            </label>
+                            </div>
+                            <div class="row" data-tooltip="Волгоградская область, Волгоград, ул. Красная, д. 45">
+                                <input class="right-input check-item" type="checkbox" id="right-check5" required>
+                                <label class="right-check" for="right-check5">
+                                <span class="row__item date sortByDate">27.10.2019</span>
+                                <span class="row__item name sortByName">Ломакина Надежда Михайловна</span>
+                                <span class="row__item phone">+7 (207) 555-0119</span>
+                                <span class="row__item pharmacy">Аптека 3</span>
+                                <span class="row__item address">Волгоградская область, Волгоград, ул. Красная, д. 45</span>
+                            </label>
+                            </div>
+                            <div class="row" data-tooltip="Вологодская область, Вологда, Железнодорожный, ул. Вокзальная, д. 38">
+                                <input class="right-input check-item" type="checkbox" id="right-check6" required>
+                                <label class="right-check" for="right-check6">
+                                <span class="row__item date sortByDate">26.10.2019</span>
+                                <span class="row__item name sortByName">Текутьев Александр Александрович</span>
+                                <span class="row__item phone">+7 (219) 555-0114</span>
+                                <span class="row__item pharmacy">Аптека 3</span>
+                                <span class="row__item address">Вологодская область, Вологда, Железнодорожный, ул. Вокзальная, д. 38</span>
+                            </label>
+                            </div>
+                            <div class="row" data-tooltip="Свердловская область, Екатеринбург, Центральный, ул. Демидова, д 16/1">
+                                <input class="right-input check-item" type="checkbox" id="right-check7" required>
+                                <label class="right-check" for="right-check7">
+                                <span class="row__item date sortByDate">26.10.2019</span>
+                                <span class="row__item name sortByName">Попова Анастасия Владимировна</span>
+                                <span class="row__item phone">+7 (229) 555-0109</span>
+                                <span class="row__item pharmacy">Аптека 3</span>
+                                <span class="row__item address">Свердловская область, Екатеринбург, Центральный, ул. Демидова, д16/1</span>
+                            </label>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+
+                <div class="profile"></div>
+            </div>
+
+            <div class="modal" id="modal">
+                <div class="modal__inner">
+                    <div class="modal__title">Согласование</div>
+                    <form class="modal__form">
+                        <div class="modal__subtitle input-subtitle">Решение</div>
+                        <div class="input__wrap">
+                            <input class="input field" list="decision" required>
+                            <datalist id="decision">
+                            <option value="Согласовать">
+                            <option value="Отклонить">
+                            <option value="Отложить">
+                            </datalist>
+                        </div>
+                        <div class="modal__subtitle">Комментарий</div>
+                        <textarea class="textarea field" placeholder="При отрицательном решении по заявке заполните поле             
+комментарий" optional></textarea>
+                        <div class="buttons__inner">
+                            <button class="left btn" type="submit">Добавить</button>
+                            <button class="right" type="button">Отменить</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js "></script>
+    <script src="js/libs.min.js "></script>
+    <script src="js/main.js "></script>
+</body>
+
+</html>

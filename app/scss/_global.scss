@@ -1,0 +1,64 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+*::before,
+*::after {
+    content: '';
+    width: 24px;
+    height: 24px;
+    font-family: "Material Design Icons";
+    font-size: 24px;
+    color: #ACB2BD;
+    position: absolute;
+    left: 0;
+    top: -2px;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    cursor: url(../images/cursor.cur), pointer;
+}
+
+a,
+input,
+label,
+textarea,
+button {
+    text-decoration: none;
+    outline: transparent;
+    cursor: url(../images/cursor-hand.cur), pointer;
+}
+
+input::-webkit-calendar-picker-indicator {
+    display: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.btn {
+    background: #1EB2E0;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    color: #FFFFFF;
+    transition: background 9999999s, color 9999999s;
+    &:hover {
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1), 0px 0px 4px rgba(0, 0, 0, 0.15);
+    }
+    &:active {
+        background: #09ABCF;
+        color: #D8F8FF;
+        transition: background 0s, color 0s;
+    }
+}
